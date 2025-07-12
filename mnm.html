@@ -8,9 +8,10 @@
 <body>
     enter a number :<input type="number" id="num1" />
     enter a number :<input type="number" id="num2" />
-    <button id="btn">Add and Subtract</button>
+    <button id="btn">Add, Subtract And multiplication</button>
     <p id="result"></p>
     <p id="result2"></p>
+    <p id="result3"></p>
     <script>
 
 
@@ -19,8 +20,10 @@
             var num2 = parseFloat(document.getElementById("num2").value);
             var result = num1 + num2;
             var result2 = num1 - num2;
+            var result3 = num1 * num2;
             document.getElementById("result").innerText = "Result: " + result;
             document.getElementById("result2").innerText = "Result: " + result2;
+            document.getElementById("result3").innerText = "Result: " + result3;
         });
     </script>
 </body>
